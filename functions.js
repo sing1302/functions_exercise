@@ -1,8 +1,7 @@
-
-/*
-Parwinder singh
-June 10 ,2020
-*/
+/**
+ Parwinder singh
+ 17 June 2020 
+**/
 
 // This function returns a random number between (and including both) minimum and maximum
 function getRandomInteger (minimum, maximum) {
@@ -12,20 +11,41 @@ function getRandomInteger (minimum, maximum) {
 }
 
 // Povided Arrays
-const nouns = ['dragons', 'toasters']
+const nouns = ["cheese", "strawberry", "chocolate", "honey", "milk", "chips",  "jam", "cereal", "mustard", "ketchup",];
 
-const verbs = ['walked', 'ran']
+const verbs = [ "walked", "ran", "jumped", "played", "fly", "worked", "tried", "felt", "asked", "took"];
 
-const adverbs = ['menacingly', 'intentionally']
+const adverbs = [ "menacingly", "intentionally", "never", "often", "usually", "generally", "away", "always", "later", "there"];
 
-const adjectives = ['wild', 'slippery']
+const adjectives = [ "wild", "slippery", "acidic", "adorable", "amused", "dull", "ecstatic", "elated", "cruel", "bored"];
 
-const proNouns = ['they', 'we', 'you', 'he', 'she', 'I', 'it']
+const proNouns = ["they", "we", "you", "he", "she", "I", "it"];
 
-const openings = ['Once upon a time', 'I watched']
+const openings = [ "Once upon a time", "I watched", "One night", "One morning", "One afternoon", "One evening", "I ate", "I was eating", "One day", "On a sunny afternoon"];
 
-const closings = ['with extra cheese', 'the end']
+const closings = [ "with extra cheese", "the end", "at last", "before going home", "before going outside", "before leaving for vacations", "before going to play soccer", "before playing games", "with extra ketchup", "with extra spices"];
 
+function createSentence(){
+  const sentence = openings[getRandomInteger(0, openings.length - 1)] + ' ' +
+                   adjectives[getRandomInteger(0, adjectives.length - 1)] + ' ' +
+                   nouns[getRandomInteger(0, nouns.length - 1)] + ' ' +
+                   proNouns[getRandomInteger(0, proNouns.length - 1)] + ' ' +
+                   verbs[getRandomInteger(0, verbs.length - 1)] + ' ' +
+                   adverbs[getRandomInteger(0, adverbs.length - 1)] + ',' +
+                   closings[getRandomInteger(0, closings.length - 1)]
+  return sentence
+}
+
+for (let i = 0; i < 10; i++){
+    const sentence = createSentence()
+    console.log(sentence)
+}
+
+function output(sentence){
+  console.log("\n");
+  console.log(sentence);
+  console.log("\n");
+}
 // Instructions:
 
 // Arrays:
