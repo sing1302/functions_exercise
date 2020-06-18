@@ -11,19 +11,19 @@ function getRandomInteger (minimum, maximum) {
 }
 
 // Povided Arrays
-const nouns = ["cheese", "strawberry", "chocolate", "honey", "milk", "chips",  "jam", "cereal", "mustard", "ketchup",];
+const nouns = ["airpords", "cap", "bread", "mango", "tree", "banana",  "pen", "fan", "glass", "mustard",];
 
-const verbs = [ "walked", "ran", "jumped", "played", "fly", "worked", "tried", "felt", "asked", "took"];
+const verbs = [ "throwing", "run", "accepted", "yell", "sit", "walk", "swim", "speak", "hear", "went"];
 
-const adverbs = [ "menacingly", "intentionally", "never", "often", "usually", "generally", "away", "always", "later", "there"];
+const adverbs = [ "truely", "usefully", "violently", "jealously", "urgently", "weekly", "usally", "sweetlys", "after", "here"];
 
-const adjectives = [ "wild", "slippery", "acidic", "adorable", "amused", "dull", "ecstatic", "elated", "cruel", "bored"];
+const adjectives = [ "soft", "fuzzy", "big", "tall", "purple", "smooth", "second", "several", "bad", "shoot"];
 
 const proNouns = ["they", "we", "you", "he", "she", "I", "it"];
 
-const openings = [ "Once upon a time", "I watched", "One night", "One morning", "One afternoon", "One evening", "I ate", "I was eating", "One day", "On a sunny afternoon"];
+const openings = [ "To start with", "I watched", "to initiate", "One morning", "nowadays", "One evening", "I ate", "moreover", "One night", "On a afternoon"];
 
-const closings = [ "with extra cheese", "the end", "at last", "before going home", "before going outside", "before leaving for vacations", "before going to play soccer", "before playing games", "with extra ketchup", "with extra spices"];
+const closings = [ "in end", "the last", "at last", "before going ", "at the endgoing outside", "before leaving ", "before going to play soccer", "before playing games", "with extra ketchup", "with extra spices"];
 
 function createSentence(){
   const sentence = openings[getRandomInteger(0, openings.length - 1)] + ' ' +
